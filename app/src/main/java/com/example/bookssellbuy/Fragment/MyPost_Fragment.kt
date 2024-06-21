@@ -5,16 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.bookssellbuy.R
-import com.example.bookssellbuy.databinding.FragmentOtherBinding
+import com.example.bookssellbuy.databinding.FragmentMypostBinding
 
-class Other_Fragment : Fragment() {
-    private lateinit var binding: FragmentOtherBinding
+class MyPost_Fragment : Fragment() {
+    private lateinit var binding: FragmentMypostBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding=FragmentOtherBinding.inflate(inflater,container,false)
+        binding=FragmentMypostBinding.inflate(inflater,container,false)
         // Inflate the layout for this fragment
         return binding.root
     }
