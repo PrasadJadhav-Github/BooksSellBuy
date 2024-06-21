@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:shownIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_prime"
+        android:title="prime"/>
+    <item
+        android:id="@+id/book1"
+        android:title="Book1"/>
+
+    <item
+        android:id="@+id/book2"
+        android:title="Book2"/>
+    <item
+        android:id="@+id/book3"
+        android:title="Book3"/>
+
+
+    </group>
+</menu>
