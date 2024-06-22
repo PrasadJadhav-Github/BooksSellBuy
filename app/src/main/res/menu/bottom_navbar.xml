@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/home"
+    <item android:id="@+id/homeFragment"
         android:title="Home"
         android:icon="@drawable/home"/>
 
-    <item android:id="@+id/category"
+    <item android:id="@+id/categoryFragment"
         android:title="Category"
         android:icon="@drawable/apps"/>
 
-    <item android:id="@+id/placeholder"
+    <item android:id="@+id/add"
         android:title=" "
         android:enabled="true"/>
 
-    <item android:id="@+id/other"
-        android:title="Other"
+    <item android:id="@+id/myPostFragment"
+        android:title="mypost"
         android:icon="@drawable/post"/>
 
-    <item android:id="@+id/account"
+    <item android:id="@+id/accountFragment"
         android:title="Account"
         android:icon="@drawable/account"/>
 </menu>

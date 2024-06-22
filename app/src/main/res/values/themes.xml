@@ -1,12 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.BooksSellBuy" parent="Theme.MaterialComponents.DayNight">
+    <style name="Base.Theme.BooksSellBuy" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-         <item name="colorPrimary">@color/lavender</item>
-        <item name="colorPrimaryVariant">@color/green</item>
-        <item name="android:statusBarColor">@color/lavender</item>
+<!--         <item name="colorPrimary">@color/lavender</item>-->
+<!--        <item name="colorPrimaryVariant">@color/green</item>-->
+<!--        <item name="android:statusBarColor">@color/lavender</item>-->
     </style>
 
-    <style name="Theme.BooksSellBuy" parent="Base.Theme.BooksSellBuy" />
+
 </resources>
 
