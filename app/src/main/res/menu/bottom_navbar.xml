@@ -9,12 +9,12 @@
         android:title="Category"
         android:icon="@drawable/apps"/>
 
-    <item android:id="@+id/add"
-        android:title=" "
-        android:enabled="true"/>
+    <item android:id="@+id/addBookFragment"
+        android:title=" Add Book "
+        android:icon="@drawable/addbook"/>
 
     <item android:id="@+id/myPostFragment"
-        android:title="mypost"
+        android:title="MyPost"
         android:icon="@drawable/post"/>
 
     <item android:id="@+id/accountFragment"

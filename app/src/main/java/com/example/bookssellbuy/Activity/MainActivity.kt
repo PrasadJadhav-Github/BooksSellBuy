@@ -9,6 +9,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.bookssellbuy.R
 import com.example.bookssellbuy.databinding.ActivityMainBinding
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -18,12 +19,16 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //2 line use for set bottom navigation
         val navController = findNavController(R.id.fragmentContainer)
         binding.bottomMenu.setupWithNavController(navController)
 
+        //function Call
         hideNavBarforperticularfragment(navController)
+
     }
 
+    //function for hide tool bar in Account Fragment
     private fun hideNavBarforperticularfragment(navController: NavController) {
         val materialToolbar2: Toolbar = findViewById(R.id.materialToolbar2)
         setSupportActionBar(materialToolbar2)
