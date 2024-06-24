@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -58,4 +59,7 @@ dependencies {
 
     // Material Design
     implementation ("com.google.android.material:material:1.3.0-alpha03")
+
+    //firebase
+    implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
 }

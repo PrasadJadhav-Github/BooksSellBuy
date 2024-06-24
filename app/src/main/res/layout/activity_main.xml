@@ -58,26 +58,19 @@
             app:navGraph="@navigation/nav_graph"
             app:defaultNavHost="true" />
 
-        <com.google.android.material.bottomappbar.BottomAppBar
-            android:id="@+id/bottomAppBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:backgroundTint="@color/lavender"
-            app:fabCradleMargin="10dp"
-            app:fabCradleRoundedCornerRadius="50dp">
+
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottomMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/lavender"
+                android:layout_gravity="bottom"
                 app:itemIconTint="@color/white"
                 app:itemTextColor="@color/white"
                 app:labelVisibilityMode="labeled"
                 app:menu="@menu/bottom_navbar" />
 
-        </com.google.android.material.bottomappbar.BottomAppBar>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

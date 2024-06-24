@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "527504100129",
+    "project_id": "bookbuysell-f4926",
+    "storage_bucket": "bookbuysell-f4926.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527504100129:android:2caec9ee2c2b795c424c60",
+        "android_client_info": {
+          "package_name": "com.example.bookssellbuy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtMOZicLzjPGEr0eqN6NY7K6VcbnCTzjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
