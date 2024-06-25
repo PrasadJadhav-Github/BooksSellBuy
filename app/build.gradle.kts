@@ -62,4 +62,8 @@ dependencies {
 
     //firebase
     implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
+
+    //shimmer effect
+//    implementation ("com.github.denzcoskun:ImageSlideshow:0.1.0")
+//    implementation ("com.facebook.shimmer:shimmer:0.5.0")
 }

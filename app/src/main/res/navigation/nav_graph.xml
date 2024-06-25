@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/categoryFragment"
-        android:name="com.example.bookssellbuy.Fragment.Category_Fragment"
+        android:name="com.example.bookssellbuy.Fragment.CategoryFragment"
         android:label="fragment_category"
         tools:layout="@layout/fragment_category_">
         <action

@@ -3,6 +3,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/white"
+    android:layout_marginBottom="50dp"
     tools:context="Fragment.Fragment_one_to_ten">
 
 
