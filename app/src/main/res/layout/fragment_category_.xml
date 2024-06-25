@@ -30,7 +30,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:id="@+id/clothingCard"
+                android:id="@+id/cardviewOneToTen"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 app:cardElevation="20dp"
@@ -63,6 +63,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
+                android:id="@+id/cardviewElevenToTwelve"
                 app:cardElevation="20dp"
                 app:cardCornerRadius="20dp">
                 <RelativeLayout
@@ -104,6 +105,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
+                android:id="@+id/cardviewGraduation"
                 android:layout_weight="1"
                 app:cardElevation="20dp"
                 app:cardCornerRadius="20dp">
@@ -120,11 +122,11 @@
                         android:textColor="@color/lavender"
                         android:layout_marginTop="10dp"
                         android:layout_centerHorizontal="true"
-                        android:layout_below="@+id/homeImage"/>
+                        android:layout_below="@+id/graduationImage"/>
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/homeImage"
+                        android:id="@+id/graduationImage"
                         android:src="@drawable/graduate"
                         android:layout_marginTop="15dp"
                         android:layout_centerHorizontal="true"/>
@@ -135,6 +137,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
+                android:id="@+id/cardviewEngineering"
                 app:cardElevation="20dp"
                 app:cardCornerRadius="20dp">
                 <RelativeLayout
@@ -150,11 +153,11 @@
                         android:textColor="@color/lavender"
                         android:layout_marginTop="10dp"
                         android:layout_centerHorizontal="true"
-                        android:layout_below="@+id/beautyImage"/>
+                        android:layout_below="@+id/engineeringimage"/>
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/beautyImage"
+                        android:id="@+id/engineeringimage"
                         android:src="@drawable/engineer"
                         android:layout_marginTop="15dp"
                         android:layout_centerHorizontal="true"/>

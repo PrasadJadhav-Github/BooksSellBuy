@@ -14,8 +14,21 @@
     <fragment
         android:id="@+id/categoryFragment"
         android:name="com.example.bookssellbuy.Fragment.Category_Fragment"
-        android:label="Category"
-        tools:layout="@layout/fragment_category_"/>
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category_">
+        <action
+            android:id="@+id/action_categoryFragment_to_fragment_one_to_ten"
+            app:destination="@id/fragment_one_to_ten" />
+        <action
+            android:id="@+id/action_categoryFragment_to_fragment_eleven_to_twelve"
+            app:destination="@id/fragment_eleven_to_twelve" />
+        <action
+            android:id="@+id/action_categoryFragment_to_fragment_Graduation"
+            app:destination="@id/fragment_Graduation" />
+        <action
+            android:id="@+id/action_categoryFragment_to_fragment_Engineering"
+            app:destination="@id/fragment_Engineering" />
+    </fragment>
 
     <fragment
         android:id="@+id/addBookFragment"
@@ -33,6 +46,32 @@
         android:id="@+id/accountFragment"
         android:name="com.example.bookssellbuy.Fragment.Accounts_Fragment"
         android:label="Account"
-        tools:layout="@layout/fragment_accounts_"/>
+        tools:layout="@layout/fragment_accounts_">
+    </fragment>
+
+
+
+
+    <fragment
+        android:id="@+id/fragment_one_to_ten"
+        android:name="com.example.bookssellbuy.Fragment.Fragment_one_to_ten"
+        android:label="Fragment_one_to_ten"
+        tools:layout="@layout/fragment_one_to_ten"/>
+    <fragment
+        android:id="@+id/fragment_eleven_to_twelve"
+        android:name="com.example.bookssellbuy.Fragment.Fragment_eleven_to_twelve"
+        android:label="Fragment_eleven_to_twelve"
+        tools:layout="@layout/fragment_eleven_to_twelve"/>
+    <fragment
+        android:id="@+id/fragment_Engineering"
+        android:name="com.example.bookssellbuy.Fragment.Fragment_Engineering"
+        android:label="fragment__engineering"
+        tools:layout="@layout/fragment__engineering" />
+    <fragment
+        android:id="@+id/fragment_Graduation"
+        android:name="com.example.bookssellbuy.Fragment.Fragment_Graduation"
+        android:label="fragment__graduation"
+        tools:layout="@layout/fragment__graduation" />
+
 
 </navigation>
