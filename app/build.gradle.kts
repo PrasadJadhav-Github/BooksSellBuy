@@ -49,6 +49,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.firebase.storage)
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -66,4 +68,6 @@ dependencies {
     //shimmer effect
 //    implementation ("com.github.denzcoskun:ImageSlideshow:0.1.0")
 //    implementation ("com.facebook.shimmer:shimmer:0.5.0")
+
+    implementation ("androidx.appcompat:appcompat:1.4.0")
 }
