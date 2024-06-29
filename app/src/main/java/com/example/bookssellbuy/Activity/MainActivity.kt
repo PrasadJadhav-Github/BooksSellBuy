@@ -24,20 +24,52 @@ class MainActivity : AppCompatActivity() {
         binding.bottomMenu.setupWithNavController(navController)
 
         //function Call
-        hideNavBarforperticularfragment(navController)
+        setupToolbarVisibility(navController)
+        hidetoolbarforwelcomescreen(navController)
 
     }
 
-    //function for hide tool bar in Account Fragment
-    private fun hideNavBarforperticularfragment(navController: NavController) {
+    private fun setupToolbarVisibility(navController: NavController) {
         val materialToolbar2: Toolbar = findViewById(R.id.materialToolbar2)
         setSupportActionBar(materialToolbar2)
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
-                R.id.accountFragment -> materialToolbar2.visibility = View.GONE
-                else -> materialToolbar2.visibility = View.VISIBLE
+                R.id.accountFragment, R.id.fragment_Signin -> {
+                    materialToolbar2.visibility = View.GONE
+                    binding.bottomMenu.visibility =
+                        View.GONE // Optionally hide bottom navigation
+                }
+
+                else -> {
+                    materialToolbar2.visibility = View.VISIBLE
+                    binding.bottomMenu.visibility =
+                        View.VISIBLE // Show bottom navigation for other fragments
+                }
+            }
+        }
+    }
+
+
+    private fun hidetoolbarforwelcomescreen(navController: NavController) {
+        val materialToolbar2: Toolbar = findViewById(R.id.materialToolbar2)
+        setSupportActionBar(materialToolbar2)
+
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            when (destination.id) {
+                R.id.fragment_WelcomeScreen -> {
+                    materialToolbar2.visibility = View.GONE
+//                    binding.bottomMenu.visibility =
+//                        View.GONE // Optionally hide bottom navigation
+                }
+
+                else -> {
+                    materialToolbar2.visibility = View.VISIBLE
+                    binding.bottomMenu.visibility =
+                        View.VISIBLE // Show bottom navigation for other fragments
+                }
             }
         }
     }
 }
+

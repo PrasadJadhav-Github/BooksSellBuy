@@ -11,12 +11,15 @@
 
 
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textSize="50dp"
-        android:text="Home" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewProducts"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="6.50dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:spanCount="2" />
 
 </FrameLayout>

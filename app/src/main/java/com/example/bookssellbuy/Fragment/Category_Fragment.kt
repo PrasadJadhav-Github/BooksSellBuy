@@ -44,6 +44,7 @@ class CategoryFragment : Fragment() {
         binding.cardviewEngineering.setOnClickListener {
             findNavController().navigate(R.id.action_categoryFragment_to_fragment_Engineering)
         }
+
     }
 
 
