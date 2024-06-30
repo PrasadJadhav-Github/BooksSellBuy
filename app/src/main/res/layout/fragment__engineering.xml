@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:text="Civil engineering"
+        android:text="Civil "
         android:padding="16dp"
         android:gravity="center_vertical"
         android:background="@drawable/button_background"/>
@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="mechanical engineering"
+        android:text="mechanical "
         android:padding="16dp"
         android:gravity="center_vertical"
         android:background="@drawable/button_background"/>
@@ -47,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="Electrical Engineering"
+        android:text="Electrical"
         android:padding="16dp"
         android:gravity="center_vertical"
         android:background="@drawable/button_background"/>
@@ -56,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="Electronic Engineering"
+        android:text="Electronic "
         android:padding="16dp"
         android:gravity="center_vertical"
         android:background="@drawable/button_background"/>
