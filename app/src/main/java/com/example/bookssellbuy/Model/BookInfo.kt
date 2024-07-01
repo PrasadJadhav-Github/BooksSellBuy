@@ -6,5 +6,6 @@ data class BookInfo (
     val bookStandard:String?=null,
     val bookYear: String? = null,
     val mobileNumber: String? = null,
-    val bookCoverimage: String? = null
+    val imageUrl: String?=null
+
 )
