@@ -21,6 +21,7 @@
             android:textSize="23dp"/>
 
         <Button
+            android:id="@+id/buttonstandard1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -31,6 +32,7 @@
             android:stateListAnimator="@drawable/button_click_animation"/>
 
         <Button
+            android:id="@+id/buttonstandard2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -41,6 +43,7 @@
             android:stateListAnimator="@drawable/button_click_animation"/>
 
         <Button
+            android:id="@+id/buttonstandard3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -51,6 +54,7 @@
             android:stateListAnimator="@drawable/button_click_animation"/>
 
         <Button
+            android:id="@+id/buttonstandard4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -61,6 +65,7 @@
             android:stateListAnimator="@drawable/button_click_animation"/>
 
         <Button
+            android:id="@+id/buttonstandard5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -71,6 +76,7 @@
             android:stateListAnimator="@drawable/button_click_animation"/>
 
         <Button
+            android:id="@+id/buttonstandard6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -81,6 +87,7 @@
             android:stateListAnimator="@drawable/button_click_animation"/>
 
         <Button
+            android:id="@+id/buttonstandard7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -91,6 +98,7 @@
             android:stateListAnimator="@drawable/button_click_animation"/>
 
         <Button
+            android:id="@+id/buttonstandard8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -101,6 +109,7 @@
             android:stateListAnimator="@drawable/button_click_animation"/>
 
         <Button
+            android:id="@+id/buttonstandard9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -111,6 +120,7 @@
             android:stateListAnimator="@drawable/button_click_animation"/>
 
         <Button
+            android:id="@+id/buttonstandard10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"

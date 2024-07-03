@@ -68,4 +68,13 @@ dependencies {
     implementation("com.google.firebase:firebase-auth")
 
     implementation ("androidx.appcompat:appcompat:1.4.0")
+
+    //glide
+    implementation ("com.github.bumptech.glide:glide:4.12.0")
+
+    implementation ("com.github.denzcoskun:ImageSlideshow:0.1.5")
+    implementation ("com.facebook.shimmer:shimmer:0.5.0")
+
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
+
 }

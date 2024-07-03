@@ -25,19 +25,20 @@ class AddBooks_Fragment : Fragment() {
     private lateinit var database: DatabaseReference
     private lateinit var storage: FirebaseStorage
     private var selectedImageUri: Uri? = null
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentAddBooksBinding.inflate(inflater, container, false)
-        setAutoCompleteTextView()
-        onSubmitButtonClick()
-        onSelectedImageClick()
-        storage = FirebaseStorage.getInstance()
-        // Inflate the layout for this fragment
+        setAutoCompleteTextView()  // Set up the auto-complete text views for book category and standard
+        onSubmitButtonClick()  // Set the action for the submit button click
+        onSelectedImageClick()  // Set the action for selecting an image
+        storage = FirebaseStorage.getInstance()  // Initialize FirebaseStorage
         return binding.root
     }
 
+    // Function to handle the image selection process
     private fun onSelectedImageClick() {
         binding.buttonSelectImage.setOnClickListener {
             val intent = Intent(Intent.ACTION_PICK)
@@ -46,6 +47,7 @@ class AddBooks_Fragment : Fragment() {
         }
     }
 
+    // Function to handle the result of the image selection
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == REQUEST_CODE_SELECT_IMAGE && resultCode == Activity.RESULT_OK) {
@@ -54,6 +56,7 @@ class AddBooks_Fragment : Fragment() {
         }
     }
 
+    // Function to handle the submit button click
     private fun onSubmitButtonClick() {
         binding.buttonAddBook.setOnClickListener {
             val bookname = binding.edittextBookName.text.toString()
@@ -96,6 +99,7 @@ class AddBooks_Fragment : Fragment() {
         }
     }
 
+    // Function to upload the selected image and save book data to Firebase
     private fun uploadImageAndSaveData(
         bookname: String,
         bookprice: String,
@@ -110,29 +114,34 @@ class AddBooks_Fragment : Fragment() {
 
         selectedImageUri?.let {
             ref.putFile(it)
-
                 .addOnSuccessListener { taskSnapshot ->
                     ref.downloadUrl.addOnSuccessListener { uri ->
                         saveBookInfoToDatabase(bookname, bookprice, bookdescription, bookcategory, bookstandard, bookyear, mobilenumber, uri.toString())
                     }
                 }
-
                 .addOnFailureListener {
-                    Toast.makeText(requireContext(), "Failed to uplad an image", Toast.LENGTH_SHORT)
+                    Toast.makeText(requireContext(), "Failed to upload an image", Toast.LENGTH_SHORT)
                         .show()
-
                 }
         }
-
     }
 
+    // Function to save the book information to Firebase Database
+    private fun saveBookInfoToDatabase(
+        bookname: String,
+        bookprice: String,
+        bookdescription: String,
+        bookcategory: String,
+        bookstandard: String,
+        bookyear: String,
+        mobilenumber: String,
+        imageUrl: String
+    ) {
+        database = FirebaseDatabase.getInstance().getReference("BookInfo")
+        val bookInfo = BookInfo(bookname, bookprice, bookdescription, bookcategory, bookstandard, bookyear, mobilenumber, imageUrl)
 
-    private fun saveBookInfoToDatabase(bookname: String,bookprice: String,bookdescription: String,
-                                       bookcategory: String,bookstandard: String,bookyear: String,mobilenumber: String,imageUrl: String) {
-
-        database =FirebaseDatabase.getInstance().getReference("BookInfo")
-        val  bookInfo=BookInfo(bookname,bookprice,bookdescription,bookcategory,bookstandard,bookyear,mobilenumber,imageUrl)
         database.child(bookname).setValue(bookInfo).addOnSuccessListener {
+            // Clear all input fields and image view after successful book addition
             binding.edittextBookName.text?.clear()
             binding.editTextBookPrice.text?.clear()
             binding.editTextBookDescription.text?.clear()
@@ -145,15 +154,10 @@ class AddBooks_Fragment : Fragment() {
         }.addOnFailureListener {
             Toast.makeText(requireContext(), "Failed to add book", Toast.LENGTH_SHORT).show()
         }
-
     }
 
-
-
-
-
+    // Function to set up the auto-complete text views for book category and standard
     private fun setAutoCompleteTextView() {
-
         val fieldsAdapter = ArrayAdapter(
             requireContext(),
             R.layout.show_list,
@@ -161,17 +165,14 @@ class AddBooks_Fragment : Fragment() {
         )
         val onetotenAdapter = ArrayAdapter(
             requireContext(),
-            R.layout.show_list,
+            R.layout.standard_show_list,
             Category.oneToTen
         )
-
         val eleventotwelveAdapter = ArrayAdapter(
             requireContext(),
             R.layout.show_list,
             Category.elevenToTwelve
         )
-
-
         val graduationAdapter = ArrayAdapter(
             requireContext(),
             R.layout.show_list,
@@ -183,7 +184,7 @@ class AddBooks_Fragment : Fragment() {
             Category.engineering
         )
 
-
+        // Apply the adapters to the corresponding AutoCompleteTextViews
         binding.apply {
             edittextBookCategory.setAdapter(fieldsAdapter)
             edittextBookCategory.setOnItemClickListener { parent, view, position, id ->
@@ -191,34 +192,22 @@ class AddBooks_Fragment : Fragment() {
                 when (selectedCategory) {
                     "1 to 10" -> {
                         edittextBookStandard.setAdapter(onetotenAdapter)
-                        Toast.makeText(requireContext(), "Selected: 1 to 10", Toast.LENGTH_SHORT)
-                            .show()
+                        Toast.makeText(requireContext(), "Selected: 1 to 10", Toast.LENGTH_SHORT).show()
                     }
-
                     "11 to 12" -> {
                         edittextBookStandard.setAdapter(eleventotwelveAdapter)
-                        Toast.makeText(requireContext(), "Selected: 11 to 12", Toast.LENGTH_SHORT)
-                            .show()
+                        Toast.makeText(requireContext(), "Selected: 11 to 12", Toast.LENGTH_SHORT).show()
                     }
-
                     "Graduation" -> {
                         edittextBookStandard.setAdapter(graduationAdapter)
-                        Toast.makeText(requireContext(), "Selected: Graduation", Toast.LENGTH_SHORT)
-                            .show()
+                        Toast.makeText(requireContext(), "Selected: Graduation", Toast.LENGTH_SHORT).show()
                     }
-
                     "Engineering" -> {
                         edittextBookStandard.setAdapter(engineeringAdapter)
-                        Toast.makeText(
-                            requireContext(),
-                            "Selected: Engineering",
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        Toast.makeText(requireContext(), "Selected: Engineering", Toast.LENGTH_SHORT).show()
                     }
-
                     else -> {
-                        Toast.makeText(requireContext(), "Invalid category", Toast.LENGTH_SHORT)
-                            .show()
+                        Toast.makeText(requireContext(), "Invalid category", Toast.LENGTH_SHORT).show()
                     }
                 }
             }
@@ -226,6 +215,6 @@ class AddBooks_Fragment : Fragment() {
     }
 
     companion object {
-        private const val REQUEST_CODE_SELECT_IMAGE = 1001
+        private const val REQUEST_CODE_SELECT_IMAGE = 1001  // Request code for image selection
     }
 }

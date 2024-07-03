@@ -21,6 +21,7 @@
             android:textSize="23dp"/>
 
         <Button
+            android:id="@+id/science11th"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -31,6 +32,7 @@
             android:stateListAnimator="@drawable/button_click_animation"/>
 
         <Button
+            android:id="@+id/commerce11th"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -41,6 +43,7 @@
             android:stateListAnimator="@drawable/button_click_animation"/>
 
         <Button
+            android:id="@+id/arts11th"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -51,6 +54,7 @@
             android:stateListAnimator="@drawable/button_click_animation"/>
 
         <Button
+            android:id="@+id/science12th"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -61,6 +65,7 @@
             android:stateListAnimator="@drawable/button_click_animation"/>
 
         <Button
+            android:id="@+id/commerce12th"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -71,6 +76,7 @@
             android:stateListAnimator="@drawable/button_click_animation"/>
 
         <Button
+            android:id="@+id/arts12th"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"

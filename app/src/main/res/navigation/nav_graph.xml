@@ -73,6 +73,42 @@
         <action
             android:id="@+id/action_fragment_one_to_ten_to_categoryFragment"
             app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_fragment_one_to_ten_to_fragment_10thStandard"
+            app:destination="@id/fragment_10thStandard" />
+        <action
+            android:id="@+id/action_fragment_one_to_ten_to_fragment_9thStandard"
+            app:destination="@id/fragment_9thStandard" />
+        <action
+            android:id="@+id/action_fragment_one_to_ten_to_fragment_8thStandard"
+            app:destination="@id/fragment_8thStandard" />
+        <action
+            android:id="@+id/action_fragment_one_to_ten_to_fragment_6thStandard"
+            app:destination="@id/fragment_6thStandard" />
+        <action
+            android:id="@+id/action_fragment_one_to_ten_to_fragment_6thStandard2"
+            app:destination="@id/fragment_6thStandard" />
+        <action
+            android:id="@+id/action_fragment_one_to_ten_to_fragment_6thStandard3"
+            app:destination="@id/fragment_6thStandard" />
+        <action
+            android:id="@+id/action_fragment_one_to_ten_to_fragment_7thStandard"
+            app:destination="@id/fragment_7thStandard" />
+        <action
+            android:id="@+id/action_fragment_one_to_ten_to_fragment_5thStandard"
+            app:destination="@id/fragment_5thStandard" />
+        <action
+            android:id="@+id/action_fragment_one_to_ten_to_fragment_4thStandard"
+            app:destination="@id/fragment_4thStandard" />
+        <action
+            android:id="@+id/action_fragment_one_to_ten_to_fragment_3rdStandard"
+            app:destination="@id/fragment_3rdStandard" />
+        <action
+            android:id="@+id/action_fragment_one_to_ten_to_fragment_2ndStandard"
+            app:destination="@id/fragment_2ndStandard" />
+        <action
+            android:id="@+id/action_fragment_one_to_ten_to_fragment_1stStandard"
+            app:destination="@id/fragment_1stStandard" />
     </fragment>
     <fragment
         android:id="@+id/fragment_eleven_to_twelve"
@@ -82,6 +118,24 @@
         <action
             android:id="@+id/action_fragment_eleven_to_twelve_to_categoryFragment"
             app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_fragment_eleven_to_twelve_to_fragment_12thscience"
+            app:destination="@id/fragment_12thscience" />
+        <action
+            android:id="@+id/action_fragment_eleven_to_twelve_to_fragment_12thcommerce"
+            app:destination="@id/fragment_12thcommerce" />
+        <action
+            android:id="@+id/action_fragment_eleven_to_twelve_to_fragment_12tharts"
+            app:destination="@id/fragment_12tharts" />
+        <action
+            android:id="@+id/action_fragment_eleven_to_twelve_to_fragment_11thscience"
+            app:destination="@id/fragment_11thscience" />
+        <action
+            android:id="@+id/action_fragment_eleven_to_twelve_to_fragment_11thcommerce"
+            app:destination="@id/fragment_11thcommerce" />
+        <action
+            android:id="@+id/action_fragment_eleven_to_twelve_to_fragment_11tharts"
+            app:destination="@id/fragment_11tharts" />
     </fragment>
     <fragment
         android:id="@+id/fragment_Engineering"
@@ -91,6 +145,24 @@
         <action
             android:id="@+id/action_fragment_Engineering_to_categoryFragment"
             app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_fragment_Engineering_to_fragment_Civil"
+            app:destination="@id/fragment_Civil" />
+        <action
+            android:id="@+id/action_fragment_Engineering_to_fragment_Mechanical"
+            app:destination="@id/fragment_Mechanical" />
+        <action
+            android:id="@+id/action_fragment_Engineering_to_fragment_InformationTechnology"
+            app:destination="@id/fragment_InformationTechnology" />
+        <action
+            android:id="@+id/action_fragment_Engineering_to_fragment_Electronic"
+            app:destination="@id/fragment_Electronic" />
+        <action
+            android:id="@+id/action_fragment_Engineering_to_fragment_Electrical"
+            app:destination="@id/fragment_Electrical" />
+        <action
+            android:id="@+id/action_fragment_Engineering_to_fragment_Electrical2"
+            app:destination="@id/fragment_Electrical" />
     </fragment>
     <fragment
         android:id="@+id/fragment_Graduation"
@@ -100,6 +172,24 @@
         <action
             android:id="@+id/action_fragment_Graduation_to_categoryFragment"
             app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_fragment_Graduation_to_fragment_BCOM"
+            app:destination="@id/fragment_BCOM" />
+        <action
+            android:id="@+id/action_fragment_Graduation_to_fragment_BMS"
+            app:destination="@id/fragment_BMS" />
+        <action
+            android:id="@+id/action_fragment_Graduation_to_fragment_BSCIT"
+            app:destination="@id/fragment_BSCIT" />
+        <action
+            android:id="@+id/action_fragment_Graduation_to_fragment_BSCCS"
+            app:destination="@id/fragment_BSCCS" />
+        <action
+            android:id="@+id/action_fragment_Graduation_to_fragment_BSC_Chemistry"
+            app:destination="@id/fragment_BSC_Chemistry" />
+        <action
+            android:id="@+id/action_fragment_Graduation_to_fragment_BSC_Botney"
+            app:destination="@id/fragment_BSC_Botney" />
     </fragment>
     <fragment
         android:id="@+id/fragment_WelcomeScreen"
@@ -125,6 +215,141 @@
             android:id="@+id/action_fragment_Signin_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/fragment_10thStandard"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_10thStandard"
+        android:label="fragment_10th_standard"
+        tools:layout="@layout/fragment_10th_standard" />
+    <fragment
+        android:id="@+id/fragment_2ndStandard"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_2ndStandard"
+        android:label="fragment_2nd_standard"
+        tools:layout="@layout/fragment_2nd_standard" />
+    <fragment
+        android:id="@+id/fragment_3rdStandard"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_3rdStandard"
+        android:label="fragment_3rd_standard"
+        tools:layout="@layout/fragment_3rd_standard" />
+    <fragment
+        android:id="@+id/fragment_1stStandard"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_1stStandard"
+        android:label="fragment_1st_standard"
+        tools:layout="@layout/fragment_1st_standard" />
+    <fragment
+        android:id="@+id/fragment_4thStandard"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_4thStandard"
+        android:label="fragment_4th_standard"
+        tools:layout="@layout/fragment_4th_standard" />
+    <fragment
+        android:id="@+id/fragment_5thStandard"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_5thStandard"
+        android:label="fragment_5th_standard"
+        tools:layout="@layout/fragment_5th_standard" />
+    <fragment
+        android:id="@+id/fragment_6thStandard"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_6thStandard"
+        android:label="fragment_6th_standard"
+        tools:layout="@layout/fragment_6th_standard" />
+    <fragment
+        android:id="@+id/fragment_7thStandard"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_7thStandard"
+        android:label="fragment_7th_standard"
+        tools:layout="@layout/fragment_7th_standard" />
+    <fragment
+        android:id="@+id/fragment_8thStandard"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_8thStandard"
+        android:label="fragment_8th_standard"
+        tools:layout="@layout/fragment_8th_standard" />
+    <fragment
+        android:id="@+id/fragment_9thStandard"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_9thStandard"
+        android:label="fragment_9th_standard"
+        tools:layout="@layout/fragment_9th_standard" />
+    <fragment
+        android:id="@+id/fragment_11tharts"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_11tharts"
+        android:label="fragment_11tharts"
+        tools:layout="@layout/fragment_11tharts" />
+    <fragment
+        android:id="@+id/fragment_11thcommerce"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_11thcommerce"
+        android:label="fragment_11thcommerce"
+        tools:layout="@layout/fragment_11thcommerce" />
+    <fragment
+        android:id="@+id/fragment_11thscience"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_11thscience"
+        android:label="fragment_11thscience"
+        tools:layout="@layout/fragment_11thscience" />
+    <fragment
+        android:id="@+id/fragment_12tharts"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_12tharts"
+        android:label="fragment_12tharts"
+        tools:layout="@layout/fragment_12tharts" />
+    <fragment
+        android:id="@+id/fragment_12thcommerce"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_12thcommerce"
+        android:label="fragment_12thcommerce"
+        tools:layout="@layout/fragment_12thcommerce" />
+    <fragment
+        android:id="@+id/fragment_12thscience"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_12thscience"
+        android:label="fragment_12thscience"
+        tools:layout="@layout/fragment_12thscience" />
+    <fragment
+        android:id="@+id/fragment_BCOM"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_BCOM"
+        android:label="fragment__b_c_o_m"
+        tools:layout="@layout/fragment__b_c_o_m" />
+    <fragment
+        android:id="@+id/fragment_BMS"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_BMS"
+        android:label="fragment__b_m_s"
+        tools:layout="@layout/fragment__b_m_s" />
+    <fragment
+        android:id="@+id/fragment_BSC_Botney"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_BSC_Botney"
+        android:label="fragment__b_s_c__btney"
+        tools:layout="@layout/fragment__b_s_c__btney" />
+    <fragment
+        android:id="@+id/fragment_BSC_Chemistry"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_BSC_Chemistry"
+        android:label="fragment__b_s_c__chemistry"
+        tools:layout="@layout/fragment__b_s_c__chemistry" />
+    <fragment
+        android:id="@+id/fragment_BSCCS"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_BSCCS"
+        android:label="fragment__b_s_c_c_s"
+        tools:layout="@layout/fragment__b_s_c_c_s" />
+    <fragment
+        android:id="@+id/fragment_BSCIT"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_BSCIT"
+        android:label="fragment__b_s_c_i_t"
+        tools:layout="@layout/fragment__b_s_c_i_t" />
+    <fragment
+        android:id="@+id/fragment_Civil"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_Civil"
+        android:label="fragment__civil"
+        tools:layout="@layout/fragment__civil" />
+    <fragment
+        android:id="@+id/fragment_Electrical"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_Electrical"
+        android:label="fragment__electrical"
+        tools:layout="@layout/fragment__electrical" />
+    <fragment
+        android:id="@+id/fragment_Electronic"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_Electronic"
+        android:label="fragment__electronic"
+        tools:layout="@layout/fragment__electronic" />
+    <fragment
+        android:id="@+id/fragment_InformationTechnology"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_InformationTechnology"
+        android:label="fragment__information_technology"
+        tools:layout="@layout/fragment__information_technology" />
+    <fragment
+        android:id="@+id/fragment_Mechanical"
+        android:name="com.example.bookssellbuy.Button_Fragment.Fragment_Mechanical"
+        android:label="fragment__mechanical"
+        tools:layout="@layout/fragment__mechanical" />
 
 
 </navigation>
